@@ -20,6 +20,7 @@ test('Login', async ({page})=>{
     //Verify the successgul Login
     const logoutlink= await page.locator("//a[@id='logout2']")
     await expect(logoutlink).toBeVisible();
+    console.log("Login Successful");
 
     await page.close();
 
